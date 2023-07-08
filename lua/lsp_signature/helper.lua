@@ -695,10 +695,10 @@ helper.get_doc = function(result)
 end
 
 helper.completion_visible = function()
-  local hascmp, cmp = pcall(require, 'cmp')
-  if hascmp then
-    return cmp.visible()
-  end
+  -- local hascmp, cmp = pcall(require, 'cmp')
+  -- if hascmp then
+  --   return cmp.visible()
+  -- end
 
   return fn.pumvisible() ~= 0
 end
